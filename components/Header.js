@@ -64,6 +64,7 @@ function Header() {
 					layout="fixed"
 				/>
 				<p className="whitespace-nowrap font-semibold pr-3">Samiya McIntosh</p>
+				{/* //to use name instead of hardcoded {session.user.name} */}
 				<ViewGridIcon className="icon" />
 				<ChatIcon className="icon" />
 				<BellIcon className="icon" />

@@ -10,9 +10,9 @@ const realtimePosts = [
 	},
 	{
 		name: "Elon Musk",
-		image: "https://links.papareact.com/4zn",
-		// postImage: "https://links.papareact.com/kxk",
-		message: "Tesla's is where it's at.",
+		image: "https://links.papareact.com/kxk",
+		postImage: "https://links.papareact.com/4zn",
+		message: "Tesla is where it's at.",
 		timestamp: " 11-11-21, 7:53pm",
 	},
 	{

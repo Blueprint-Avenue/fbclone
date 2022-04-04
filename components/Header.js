@@ -1,4 +1,5 @@
 import Image from "next/image";
+import MsPacMan from "../asset/MsPacMan.webp";
 import {
 	BellIcon,
 	ChatIcon,
@@ -15,8 +16,11 @@ import {
 	ShoppingCartIcon,
 } from "@heroicons/react/outline";
 import HIcon from "./HIcon";
+// import { useSession, signOut } from 'next-auth/client';
 
 function Header() {
+	// const [session] = useSession();
+
 	return (
 		<div className="sticky top-0 z-50 bg-white flex items-center p-2 lg:px-5 shadow-md">
 			{/* Header left */}
@@ -50,6 +54,15 @@ function Header() {
 			{/* Right */}
 			<div className="flex items-center sm:space-x-2 justify-end">
 				{/* Profile Picture */}
+				<Image
+					// onClick={signOut}
+					className="rounded-full cursor-pointer"
+					src={MsPacMan}
+					//{session.user.image} once auth works.
+					width="40"
+					height="40"
+					layout="fixed"
+				/>
 				<p className="whitespace-nowrap font-semibold pr-3">Samiya McIntosh</p>
 				<ViewGridIcon className="icon" />
 				<ChatIcon className="icon" />
